@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <button id="showbutton">CLICK ME!!</button>
+    <div id="hide">
+    <h1>Hi my name is Time</h1>
+    <h2>My real name is Teerapt Chaiwachirasak</h2>
+    <p>I love playing Overwatch, and I am reall good at playing Hanzo.</p>
+    <p>I am studying at SIIT, in Computer Engineering. 3rd Years</p>
+    <h3>My favourite food.</h3>
+    <ul >
+        <li>Curry Rice</li>
+        <li>Tom Yung Kung</li>
+        <li>Mama</li>
+    </ul>
+
+    My top three things I love
+    <ol>
+        <li>Sleeping</li>
+        <li>Eating</li>
+        <li>Writing website application</li>
+    </ol>
+
+    <a href="mytimetable.html">My Time Table</a>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+    <script>
+        var hide = true;
+
+        $("#hide").hide();
+
+        $("#showbutton").click(function(){
+            if(hide==true) {
+                $("#hide").show();
+                hide=false;
+            }
+            else{
+                $("#hide").hide();
+                hide=true;
+            }
+            console.log("CLICKED!!!");
+        })
+        console.log($("#hide"));
+
+    </script>
+</body>
+</html>
